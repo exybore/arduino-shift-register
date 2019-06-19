@@ -33,7 +33,7 @@ First of all, include the library at the top of your code :
 Then, we're going to declare our register using the `ShiftRegister` class :
 
 ```cpp
-ShiftRegister reg(12, 8, 11, 8);
+ShiftRegister shiftRegister(12, 8, 11, 8);
 ```
 
 The constructor takes four parameters :
@@ -47,7 +47,7 @@ Finally, we're going to install our register in the `setup` part of our code :
 
 ```cpp
 void setup() {
-  reg.setup();
+  shiftRegister.setup();
 }
 ```
 
@@ -59,7 +59,7 @@ To set a pin in high or low, we're going to use the `setPin` function of our cla
 
 ```cpp
 void loop() {
-  reg.setPin(2, HIGH);
+  shiftRegister.setPin(2, HIGH);
 }
 ```
 
@@ -67,9 +67,9 @@ Here, the 2nd pin will be on. We can repeat with all the pins we want :
 
 ```cpp
 void loop() {
-  reg.setPin(2, HIGH);
-  reg.setPin(3, HIGH);
-  reg.setPin(5, HIGH);
+  shiftRegister.setPin(2, HIGH);
+  shiftRegister.setPin(3, HIGH);
+  shiftRegister.setPin(5, HIGH);
 }
 ```
 
@@ -77,11 +77,11 @@ In order to tell the register each pin's state, we simply use the `save` functio
 
 ```cpp
 void loop() {
-  reg.setPin(2, HIGH);
-  reg.setPin(3, HIGH);
-  reg.setPin(5, HIGH);
+  shiftRegister.setPin(2, HIGH);
+  shiftRegister.setPin(3, HIGH);
+  shiftRegister.setPin(5, HIGH);
 
-  reg.save();
+  shiftRegister.save();
 }
 ```
 
@@ -89,14 +89,14 @@ If you apply modifications after saving, the old ones that you didn't touch will
 
 ```cpp
 void loop() {
-  reg.setPin(2, HIGH);
-  reg.setPin(3, HIGH);
-  reg.setPin(5, HIGH);
+  shiftRegister.setPin(2, HIGH);
+  shiftRegister.setPin(3, HIGH);
+  shiftRegister.setPin(5, HIGH);
 
-  reg.save(); // pins 2, 3 and 5 are on
+  shiftRegister.save(); // pins 2, 3 and 5 are on
 
-  reg.setPin(3, LOW);
-  reg.save(); // pins 2 and 5 are on
+  shiftRegister.setPin(3, LOW);
+  shiftRegister.save(); // pins 2 and 5 are on
 }
 ```
 
