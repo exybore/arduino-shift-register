@@ -1,0 +1,4 @@
+ShiftRegister  KEYWORD1
+setup          KEYWORD2
+setPin         KEYWORD2
+save           KEYWORD2
