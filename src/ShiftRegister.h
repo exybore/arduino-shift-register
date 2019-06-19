@@ -39,7 +39,7 @@ public:
    * 
    * @param clock_pin The clock pin (SRCLK)
    * @param latch_pin The latch pin (RCLK)
-   * @param data_pin The data pin (OE)
+   * @param data_pin The data pin (SER)
    * @param pins_number Number of available pins
    */
   ShiftRegister(int clock_pin, int latch_pin, int data_pin, int pins_number);

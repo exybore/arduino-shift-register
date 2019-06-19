@@ -16,7 +16,7 @@
 // - The second one is the latch pin (RCLK)
 // - The third is the data pin (SER)
 // - Finally, we set the number of available pins on the register
-// If you want help with the cabling, check the schema on the examples/BasicUsage/schema.png image, located in the library.
+// If you want help with the cabling, check the schema on the schema.png image, located in the library.
 ShiftRegister reg(12, 8, 11, 8);
 
 void setup()
