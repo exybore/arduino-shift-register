@@ -11,6 +11,7 @@
 For this guide, we're going to use a 74HC595 with this cabling :
 
 ![schema](schema.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fexybore%2Farduino-shift-register.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fexybore%2Farduino-shift-register?ref=badge_shield)
 
 We connected four LEDs to the 2nd, 3rd, 4th and 5th pins. You can change where the blue, green and yellow wires are located, but the red and black ones must stay here : they're power inputs and outputs.
 
@@ -125,3 +126,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fexybore%2Farduino-shift-register.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fexybore%2Farduino-shift-register?ref=badge_large)
